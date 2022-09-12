@@ -47,15 +47,57 @@ header p{
     text-decoration: underline;
 }
 
-.parte1 {
-    padding: 10vh 0;
-    padding-left: 30px;
-}
-
-.texto1 {
+.texto {
     font-family: var(--fonte2);
     font-size: 3.5vw;
-    width: 800px;
-    border: 1px solid black;
+    text-align: start;
+    line-height: 2em;
+    padding: 10vh 0;
+    padding-left: 30px;
 } 
+
+.texto-destaque {
+    color: white;
+    background-image: url('../img/background001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+.texto-destaque__fundo {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding:10px 5px;
+    line-height: 2em;
+}
+
+.texto-destaque2 {
+    color: white;
+    background-image: url('../img/background002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+.rodape {
+    display: block;
+    font-family: var(--fonte3);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.rodape-link {
+    color: white;
+    font-family: var(--fonte3);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.rodape-link:hover {
+    text-decoration: underline;
+}
 
