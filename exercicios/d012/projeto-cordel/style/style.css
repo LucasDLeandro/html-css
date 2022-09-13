@@ -66,9 +66,11 @@ header p{
     color: white;
     background-image: url('../img/background001.jpg');
     background-repeat: no-repeat;
+    background-position: right center;
     background-size: cover;
     background-attachment: fixed;
-    background-position: right center;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px 0px black;
 }
 
 .texto-destaque__fundo {
@@ -85,6 +87,7 @@ header p{
     background-size: cover;
     background-attachment: fixed;
     background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px black;
 }
 
 .rodape {
