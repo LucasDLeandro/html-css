@@ -14,8 +14,12 @@
     text-decoration: none;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 .header {
-    display: block;
     background-color: black;
     color: white;
     text-align: center;
@@ -23,8 +27,8 @@
 
 .titulo {
     font-family: var(--fonte1);
-    font-size: 7vw;
-    text-transform: uppercase;
+    font-size: 10vw;
+    font-variant: small-caps;
     padding-top: 50px;
 }
 
@@ -35,7 +39,7 @@
 header p{
     font-family: var(--fonte3);
     font-size: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 50px;
 }
 
 .header-link {
@@ -48,6 +52,7 @@ header p{
 }
 
 .texto {
+    background-color: #fff;
     font-family: var(--fonte2);
     font-size: 3.5vw;
     text-align: start;
@@ -82,7 +87,6 @@ header p{
 }
 
 .rodape {
-    display: block;
     font-family: var(--fonte3);
     background-color: black;
     color: white;
