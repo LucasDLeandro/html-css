@@ -51,6 +51,11 @@ main {
     height: 474px;      /*474px*/
 } 
 
+/* iframe::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+} */
+
 #redes-sociais {
     display: flex;
     flex-direction: column;
