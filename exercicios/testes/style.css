@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor1: #023535;
+    --cor2: #015958;
+    --cor3: #008F8C;
+    --cor4: #0CABA8;
+    --cor5: #0FC2C0;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--cor5);
+    
+
+}
+
+#logo {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
+
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    gap: .5rem;
+    
+}
+
+#menu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: .5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
+    
+}
+
+#menu a:hover {
+    /* background: var(--cor4); */
+    color: var(--cor1);
+    transition: 1s;
+    
+} 
+
+@media (max-width: 700px) {
+
+    /* #header h1 {
+        position: absolute; 
+        top: 35px;
+        left: 50%;
+        transform: translate(-35px, -50%);
+
+    } */
+
+    #logo {
+        padding-left: 80px;
+    }
+
+    #menu {
+        background: var(--cor5);
+        display: block;
+        width: 100%;
+        height: 0;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        transition: .5s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+
+    }
+
+    #nav.active #menu {
+        display: block;
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;       
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #fff;
+    }
+
+    #btn-mobile {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: .09rem;
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        border: none;
+        border-radius: 3px;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        
+    }
+
+
+    #menu-icon {
+        border-top: 2px solid #fff;
+        width: 20px;
+    }
+
+    #menu-icon::after, #menu-icon::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    #nav.active #menu-icon {
+        border-top-color: transparent;
+    }
+
+    #nav.active #menu-icon::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #menu-icon::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+
+    
+
+    
+}
