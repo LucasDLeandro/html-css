@@ -52,6 +52,13 @@ article {
     margin: auto;
 }
 
+/*
+MEDIA QUERY = Media Type + Media Feature
+
+Media Type = Tipo de mídia
+Media Feature = Característica de mídia.
+*/
+
 @media (max-width: 600px) {
     article {
         padding: 20px;
